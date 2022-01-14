@@ -11,15 +11,14 @@ public class Algoritim1 {
 		int minpos=0;
 		int maxpos=0;
 		
-		for(int i=1; i<arr.length; i++) {
-			if(max < arr[i]) {
-				max = arr[i];
-				maxpos = i+1;		
-			}
-			
-			if (min > arr[i]) {
+		for(int i=0; i<arr.length; i++) {
+			if (min >= arr[i]) {
 				min = arr[i];
 				minpos = i+1;
+			}
+			if (max <= arr[i]) {
+				max = arr[i];
+				maxpos = i+1;
 			}
 		}
 		
