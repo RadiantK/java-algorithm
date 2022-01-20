@@ -8,7 +8,7 @@ public class Algorithm2 {
 
 		int[] arr = {12, 25, 31, 48, 54, 66, 70, 83, 95, 108};
 
-		int target = 70;
+		int target = 54;
 		int left = 0;
 		int right = arr.length-1;
 		int mid = (left+right) / 2;
