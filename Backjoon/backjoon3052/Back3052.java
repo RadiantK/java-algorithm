@@ -28,7 +28,7 @@ public class Back3052 {
 				if(arr[i] == arr[j]) {
 					bool = true;
 					break;
-				}	
+				}
 			}
 			if(bool == false) {
 				count++;
