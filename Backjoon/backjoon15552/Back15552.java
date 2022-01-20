@@ -26,7 +26,7 @@ public class Back15552 {
 		StringTokenizer st;
 		
 		for (int i = 0; i < n; i++) {
-			st = new StringTokenizer(br.readLine()," ");
+			st = new StringTokenizer(br.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			bw.write(a+b+"\n");
