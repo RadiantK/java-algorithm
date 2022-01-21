@@ -1,8 +1,8 @@
-package backjoon1316;
+package backjoon1712;
 
 import java.util.Scanner;
 
-public class Back1716 {
+public class Back1712 {
 
 	// 손익분기점
 	public static void main(String[] args) {
