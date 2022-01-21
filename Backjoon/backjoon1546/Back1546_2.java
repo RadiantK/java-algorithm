@@ -8,6 +8,7 @@ import java.util.StringTokenizer;
 
 public class Back1546_2 {
 
+	// 42로 나누었을때 중복되지않는 나머지 값
 	public static void main(String[] args) throws NumberFormatException, IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
