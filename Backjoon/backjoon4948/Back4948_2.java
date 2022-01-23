@@ -6,45 +6,40 @@ import java.io.InputStreamReader;
 
 public class Back4948_2 {
 
-	// 메모리가 너무 많이 나옴
-	public static void main(String[] args) throws NumberFormatException, IOException {
-		
+	public static boolean[] prime = new boolean[246913];
+    
+	public static void main(String[] args) throws IOException {
+ 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
+		get_prime();	// 소수를 얻는 메소드 실행
 		
 		while(true) {
-			int M = Integer.parseInt(br.readLine());
-			int N = M * 2;
-			
-			if(M == 0) {
+			int n = Integer.parseInt(br.readLine());
+			if(n == 0) {
 				br.close();
-				break;
+				break;	// n 이 0 일경우 종료
 			}
-			
-			int[] nums = new int[(N+1)];
-			for(int i=2; i<=N; i++) {
-				nums[i] = i;
+            
+			int count = 0;	// 소수 개수를 셀 변수
+            
+			for(int i = n + 1; i <= 2 * n; i++) {
+				if(!prime[i]) count++;
 			}
-			
-			for(int i=2; i<=Math.sqrt(N); i++) {
-				if(nums[i] == 0) { // 소수가 아니면 다음으로
-					continue;
-				}
-				
-				for(int j = i+1; j <= N; j++) {
-					if(j % i == 0) { // 0으로 나눠지는 값은 소수가 아님
-						nums[j] = 0;
-					}
-				}
-			}
-			
-			int count = 0;
-			for(int i = M+1; i <nums.length; i++){
-				if(nums[i] != 0)
-					count++;
-			}
-			sb.append(count).append("\n");
-		}
-		System.out.println(sb);
+			System.out.println(count);
+		}		
 	}
+	
+	// 소수를 얻는 메소드
+	public static void get_prime() {
+		// 0 과 1 은 소수가 아니므로 true
+		prime[0] = prime[1] = true;
+		
+		for(int i = 2; i <= Math.sqrt(prime.length); i++) {
+			if(prime[i]) continue;
+			for(int j = i * i; j < prime.length; j += i) {
+				prime[j] = true;
+			}
+		}
+	}
+ 
 }

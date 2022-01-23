@@ -12,7 +12,7 @@ public class Back4948 {
 		
 		while(true) {
 			int n = Integer.parseInt(br.readLine());
-			if(n == 0) {
+			if(n == 0) { // 0이면 종료
 				br.close();
 				break;
 			}
@@ -31,7 +31,7 @@ public class Back4948 {
 			}
 			
 			for(int i = n+1; i <= (2 * n); i++) {
-				if(prime[i] == false) {
+				if(prime[i] == false) { // 소수이면 카운트 올림
 					count++;
 				}
 			}
