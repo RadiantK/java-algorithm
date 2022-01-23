@@ -33,12 +33,12 @@ public class Back9020_2 {
 	}
 	
 	private static boolean isPrime(int num) {
-
 		
+		if (num == 1) {
+			return false;
+		}
 		for(int i =2; i <= Math.sqrt(num); i++) {
-			if (num == 1) {
-				continue;
-			}
+			
 			if(num % i == 0) { // num이 i값으로 나누어 떨어지면 소수가 아님
 				return false;
 			}
