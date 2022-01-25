@@ -7,5 +7,7 @@
 	</classpathentry>
 	<classpathentry kind="src" path="Backjoon"/>
 	<classpathentry kind="src" path="Fastalgorithm"/>
+	<classpathentry kind="src" path="Programmers"/>
+	<classpathentry kind="src" path="BasicAlgorithm"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
