@@ -1,6 +1,5 @@
 package algorithm4;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Binary {
@@ -10,7 +9,7 @@ public class Binary {
 		Scanner sc = new Scanner(System.in);
 		
 		int input = sc.nextInt();
-		
+		sc.close();
 		System.out.println(Integer.toBinaryString(input));
 		
 		int[] binary = new int[10];
