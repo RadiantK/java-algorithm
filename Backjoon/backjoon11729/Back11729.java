@@ -8,7 +8,7 @@ public class Back11729 {
 
 	static int count=0;
 	static StringBuilder sb = new StringBuilder();
-	
+	// 하노이의 원판
 	public static void main(String[] args) throws NumberFormatException, IOException {
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,8 +17,7 @@ public class Back11729 {
 		br.close();
 		hanoi(n, 1, 2, 3);
 		System.out.println(count);
-		System.out.println(sb);
-		
+		System.out.println(sb);	
 	}
 	
 	static void hanoi(int n, int from, int by, int to) {
