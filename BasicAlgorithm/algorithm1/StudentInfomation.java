@@ -52,7 +52,7 @@ public class StudentInfomation {
 			list.get(0).getName().equals(st1.getName());
 			String input = sc.nextLine();
 			
-			if(!input.equalsIgnoreCase("n")) {
+			if(input.equalsIgnoreCase("y")) {
 				
 				System.out.println("학생이름을 입력하세요");
 				String st = sc.nextLine();
@@ -67,8 +67,10 @@ public class StudentInfomation {
 				if (!flag) {
 					System.out.println("해당하는 학생이름이 없습니다.");
 				}
-			} else {
+			} else if(input.equalsIgnoreCase("n")){
 				break;
+			} else {
+				System.out.println("잘못된 입력입니다. 다시 입력하세요.");
 			}
 		}
 		System.out.println("종료되었습니다.");
