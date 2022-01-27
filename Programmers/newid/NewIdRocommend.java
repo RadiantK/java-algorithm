@@ -122,7 +122,7 @@ class Solution2 {
 		return new_id;
 	}
 	
-}
+} 
 
 public class NewIdRocommend {
 
