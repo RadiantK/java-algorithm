@@ -112,5 +112,4 @@ public class Lotto {
 		System.out.println(Arrays.toString(sol.solution(a, b)));
 		System.out.println(Arrays.toString(sol2.solution(a, b)));
 	}
-
 }
