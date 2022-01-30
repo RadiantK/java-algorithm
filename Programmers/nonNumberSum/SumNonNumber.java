@@ -2,14 +2,17 @@ package nonNumberSum;
 
 class Solution {
     public int solution(int[] numbers) {
-        
+        // 없는 숫자를 알아낼 배열
         boolean[] check = new boolean[10];
 		for (int num : numbers) {
+			// 있는 숫자들은 true
 			check[num] = true;
 		}
 		
 		int sum = 0;
+		
 		for(int i = 0; i < 10; i++) {
+			// 없는 숫자들의 합을 구해줌
 			if(!check[i]) {
 				sum += i;
 			}
