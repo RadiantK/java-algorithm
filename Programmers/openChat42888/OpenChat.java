@@ -1,4 +1,4 @@
-package openChat;
+package openChat42888;
 
 import java.util.*;
 
