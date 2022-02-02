@@ -1,4 +1,4 @@
-package sumMinusPlus;
+package sumMinusPlus76501;
 
 class Solution {
     public int solution(int[] absolutes, boolean[] signs) {
