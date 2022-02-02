@@ -1,4 +1,4 @@
-package dotProduct;
+package dotProduct70128;
 
 class Solution {
     public int solution(int[] a, int[] b) {
