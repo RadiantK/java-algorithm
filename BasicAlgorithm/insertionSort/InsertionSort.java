@@ -8,10 +8,11 @@ public class InsertionSort {
 		insertion_sort(a, a.length);
 	}
 	
+	// 삽입 정렬.
 	public static void insertion_sort(int[] a, int size) {
 		
+		// 타겟과(i번째) 이전 요소와 비교해서 작으면 위치를 바꿔줌
 		for(int i = 1; i < size; i++) {
-			
 			int target = a[i];
 			
 			int j = i-1;
