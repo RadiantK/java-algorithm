@@ -1,4 +1,4 @@
-package algorithm27;
+package snailArray;
 
 import java.util.Scanner;
 
