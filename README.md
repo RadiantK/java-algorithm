@@ -4,4 +4,8 @@
 
 ## 알고리즘 문제 사이트<br/>
 - 프로그래머스 <a href="https://programmers.co.kr/">https://programmers.co.kr/</a>
+- 백준 <a href="https://www.acmicpc.net/">https://www.acmicpc.net/</a>
+<br/>
 
+### 사용한 언어
+- JAVA
