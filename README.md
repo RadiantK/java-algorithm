@@ -3,6 +3,5 @@
 <br/>
 <br/>
 ## 알고리즘 문제 사이트
-```algorithm
-프로그래머스 <a href="https://programmers.co.kr/">https://programmers.co.kr/</a>
-```
+- 프로그래머스 <a href="https://programmers.co.kr/">https://programmers.co.kr/</a>
+
