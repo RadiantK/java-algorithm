@@ -23,7 +23,7 @@ class Solution {
         		graph[i][j] = INF;
         	}
         }
-        
+
         // 간선의 정보 저장
         for(int i = 0; i < road.length; i++) {
         	// 마을이 1부터 시작하는것을 0부터 사용 ex) 1~5 를 0~4로 사용

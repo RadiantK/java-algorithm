@@ -115,13 +115,18 @@ class Solution5 {
         	graph.add(new ArrayList<>());
         }
         
-        for(int i = 0; i < road.length; i++) {
-        	int x = road[i][0]-1;
-        	int y = road[i][1]-1;
-        	int dCost = road[i][2];
-        	
-        	graph.get(x).add(new Node(y, dCost));
-        	graph.get(y).add(new Node(x, dCost));
+//        for(int i = 0; i < road.length; i++) {
+//        	int x = road[i][0]-1;
+//        	int y = road[i][1]-1;
+//        	int dCost = road[i][2];
+//        	
+//        	graph.get(x).add(new Node(y, dCost));
+//        	graph.get(y).add(new Node(x, dCost));
+//        }
+        
+        for(int[] r : road) {        	
+        	graph.get(r[0]-1).add(new Node(r[1]-1, r[2]));
+        	graph.get(r[1]-1).add(new Node(r[0]-1, r[2]));
         }
         
         answer = dijkstra(0, N, K, answer);
