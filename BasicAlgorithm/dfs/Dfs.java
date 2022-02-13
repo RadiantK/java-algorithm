@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Dfs {
 
-	static int n, e;
+	static int n, e; // n 노드의 개수, e 간선의 개수
 	static int[][] Graph = new int[10][10];
 	static boolean[] visited = new boolean[10];
 	public static void main(String[] args) {

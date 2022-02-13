@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class DfsArrayList {
 
 	public static boolean[] visited = new boolean[10];
-    public static ArrayList<ArrayList<Integer>> graph = new ArrayList<ArrayList<Integer>>();
+    public static ArrayList<ArrayList<Integer>> graph;
 
     // DFS 함수 정의
     public static void dfs(int node) {
@@ -21,6 +21,7 @@ public class DfsArrayList {
     }
 
     public static void main(String[] args) {
+    	graph = new ArrayList<>();
         // 그래프 초기화
     	for(int i = 0; i < 10; i++) {
     		graph.add(new ArrayList<>());
