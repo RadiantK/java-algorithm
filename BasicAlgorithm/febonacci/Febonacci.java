@@ -1,4 +1,4 @@
-package algorithm2;
+package febonacci;
 
 import java.util.Arrays;
 
