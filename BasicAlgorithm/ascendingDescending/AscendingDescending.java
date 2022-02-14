@@ -1,4 +1,4 @@
-package algorithm29;
+package ascendingDescending;
 
 import java.util.Scanner;
 
