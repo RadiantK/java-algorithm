@@ -1,4 +1,4 @@
-package algorithm4;
+package binary;
 
 import java.util.Scanner;
 
