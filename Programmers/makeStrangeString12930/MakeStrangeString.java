@@ -34,6 +34,8 @@ public class MakeStrangeString {
 		Solution s = new Solution();
 		String str = "try hello world";
 		System.out.println(s.solution(str));
+		
+		System.out.print((char)('A'+ 1));
 	}
 
 }
