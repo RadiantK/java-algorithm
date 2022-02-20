@@ -18,6 +18,7 @@ class Solution {
     			userMap.put(str[1], str[2]);
     		}
     	}
+    	System.out.println(userMap);
     	
     	for(int i = 0; i < record.length; i++) {
     		str = record[i].split(" ");
@@ -89,6 +90,44 @@ class Solution2 {
     }
 }
 
+class Solution5 {
+    public String[] solution(String[] record) {
+    	
+    	Map<String, String> userMap = new HashMap<>();
+    	List<String> result = new ArrayList<>();
+    	
+    	// 입력받은 문자열을 공백을 구분해서 담을 배열
+    	String[] str;
+    	for(int i = 0; i < record.length; i++) {
+    		// 공백을 구분으로 배열에 담음
+    		str = record[i].split(" ");
+    		if(str.length > 2) {
+    			// [0]번째를 제외한 나머지를 맵객체이 담음
+    			userMap.put(str[1], str[2]);
+    		}
+    	}
+    	
+    	for(int i = 0; i < record.length; i++) {
+    		str = record[i].split(" ");
+    		if(str[0].equals("Leave")) {
+    			// 맵객체에 담긴 키값에 일치하는 valuse(닉네임)을 불러옴
+    			result.add(userMap.get(str[1])+"님이 나갔습니다.");
+    		} else if(str[0].equals("Enter")) {
+    			result.add(userMap.get(str[1])+"님이 들어왔습니다.");
+    		} else {
+    			continue;
+    		}
+    	}
+    	
+    	String[] answer = result.toArray(new String[result.size()]);
+//    	int size = 0;
+//    	for(String temp : result) {
+//    		answer[size++] = temp;
+//    	}
+        return answer;
+    }
+}
+
 public class OpenChat {
 
 	public static void main(String[] args) {
@@ -107,7 +146,5 @@ public class OpenChat {
 		System.out.println(Arrays.toString(s.solution(record)));
 		
 	}
-	
-	
 
 }
