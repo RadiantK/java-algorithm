@@ -8,4 +8,8 @@
 <br/>
 
 ### 사용한 언어
-- JAVA
+- JAVA (JDK 11)
+
+### 사용한 프로그램
+- Eclipse IDE
+- intellij IDE
